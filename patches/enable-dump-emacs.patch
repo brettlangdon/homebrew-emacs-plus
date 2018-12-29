@@ -1,0 +1,12 @@
+--- a/src/emacs.c
++++ b/src/emacs.c
+@@ -2089,9 +2082,6 @@ You must run Emacs in batch mode in order to dump it.  */)
+   if (! noninteractive)
+     error ("Dumping Emacs works only in batch mode");
+ 
+-  if (!might_dump)
+-    error ("Emacs can be dumped only once");
+-
+ #ifdef GNU_LINUX
+ 
+   /* Warn if the gap between BSS end and heap start is larger than this.  */

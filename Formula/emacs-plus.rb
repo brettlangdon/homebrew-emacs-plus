@@ -112,6 +112,13 @@ class EmacsPlus < Formula
   depends_on "imagemagick@6" => :recommended
   depends_on "mailutils" => :optional
 
+  # [brettlangdon] Custom patch to enable `dump-emacs`
+  # https://www.reddit.com/r/emacs/comments/2rietp/dumpemacs_truly_speeds_up_emacs_startup/
+  patch do
+    url "https://raw.githubusercontent.com/brettlangdon/homebrew-emacs-plus/master/patches/enable-dump-emacs.patch"
+    sha256 "e10f913adc05e5da9cf9651439d1b13ec4c1fe65eecd27db3237a658f7dde61e"
+  end
+
   if build.with? "x11"
     depends_on "freetype" => :recommended
     depends_on "fontconfig" => :recommended
