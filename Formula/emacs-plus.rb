@@ -116,7 +116,7 @@ class EmacsPlus < Formula
   # https://www.reddit.com/r/emacs/comments/2rietp/dumpemacs_truly_speeds_up_emacs_startup/
   patch do
     url "https://raw.githubusercontent.com/brettlangdon/homebrew-emacs-plus/master/patches/enable-dump-emacs.patch"
-    sha256 "e10f913adc05e5da9cf9651439d1b13ec4c1fe65eecd27db3237a658f7dde61e"
+    sha256 "6fab7595ea45d5384fe54e3ad6a0fcc5b7282cfe7a91cfadb54fe3cfa133cd5c"
   end
 
   if build.with? "x11"
